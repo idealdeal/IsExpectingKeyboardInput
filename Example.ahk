@@ -1,10 +1,10 @@
 { ; AUTOEXECUTE SECTION
 
     ; This is an example script.
-    ; Goal of this function is to create "client commands" simple to AHKs hotstrings that the user can use in any
-    ; active window where the user is expected to type / write something.
+    ; Goal of this function is to create "client commands" simular to AHKs hotstrings that the user can use in any
+    ; active window where he is expected to type / write something.
 
-    ; This can can be quite handy in browser games (roleplaying etc..)
+    ; This can can be quite handy in browser games (roleplaying for example)
 
     #SingleInstance Force
     TARGET_WINDOW_NAME := "Untitled - Notepad"
@@ -91,7 +91,7 @@ return
     { ; HandleClientCommand(text)
 
         ; This is basically a function that immitates AHKs hotstring function while granting the user the ability to pass arguments
-        ; and create "client side" commands..
+        ; and create "custom commands"
         HandleClientCommand(ClientCommand) {
             if(Trim(ClientCommand) = "") {
                 SendInput {enter}
