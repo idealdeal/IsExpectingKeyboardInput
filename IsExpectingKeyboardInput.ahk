@@ -13,3 +13,15 @@ CanType() {
     RestoreClipboard(oldClip)
     return char
 }
+
+SaveAndClearClipboard() {
+    oldClip := Clipboard
+    Clipboard := ""
+    return oldClip
+}
+
+RestoreClipboard(clipboardText) {
+    Clipboard := ""
+    Clipboard := clipboardText
+    Clipwait, 0.05, 1
+}
