@@ -1,7 +1,7 @@
 { ; AUTOEXECUTE SECTION
 
     ; This is an example script.
-    ; Goal of this function is to create "client commands" simular to AHKs hotstrings that the user can use in any
+    ; Goal of this script is to create "client commands" simular to AHKs hotstrings that the user can use in any
     ; active window where he is expected to type / write something.
 
     ; This can can be quite handy in browser games (roleplaying for example)
